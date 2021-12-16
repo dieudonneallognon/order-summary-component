@@ -16,13 +16,13 @@
 }
 
 html {
-    height: 100vh;
+    height: 100%;
 }
 
 body {
     margin: 0;
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 100%;
 
     background-color: var(--pale-blue);
 
@@ -47,8 +47,10 @@ body::before {
 .card {
     border-radius: 1rem;
     background: white;
-    width: 25%;
+    width: 33%;
     position: relative;
+    -webkit-box-shadow: 0 30px 35px 15px rgba(0, 128, 114, 176.1);
+    box-shadow: 0 30px 35px 15px rgba(114, 128, 176,0.1);
 }
 
 .card-body {
@@ -56,7 +58,7 @@ body::before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1em 2em 2em;
+    padding: 1em 4em 2em;
 }
 
 .card-hero {
@@ -83,6 +85,9 @@ body::before {
     grid-template-columns: 50% 50%;
     width: 100%;
     margin-top: 2.5em;
+    background-color: var(--very-pale-blue);
+    padding: 2em 0;
+    border-radius: 1rem;
 }
 
 #plan-price {
@@ -109,13 +114,18 @@ body::before {
     color: var(--desaturated-blue);
 }
 
-#plan a {
+#plan #link {
+    padding: 0 1em;
+    display: flex;
+    justify-items: center
+}
+
+#plan div a {
     width: 100%;
-    text-align: center;
-    vertical-align: center;
+    text-align: end;
     display: inline-block;
     color: var(--bright-blue);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     margin: auto;
 }
@@ -134,7 +144,7 @@ body::before {
 
 #actions button {
     width: 100%;
-    height: 2.7em;
+    height: 3em;
     display: block;
     border-radius: 0.7rem;
     color: white;
@@ -144,6 +154,8 @@ body::before {
     border-width: 0;
     margin: 2em 0;
     cursor: pointer;
+    -webkit-box-shadow: 0 13px 25px 15px rgba(56, 41, 244, 0.15);
+    box-shadow: 0 13px 25px 15px rgba(56, 41, 244, 0.15);
 }
 
 #actions a {
