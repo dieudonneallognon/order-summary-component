@@ -11,7 +11,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -29,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/dieudonneallognon/order-summary-component](https://github.com/dieudonneallognon/order-summary-component)
+- Live Site URL: [https://dieudonneallognon.github.io/order-summary-component/](https://dieudonneallognon.github.io/order-summary-component/)
 
 ## My Process
 
@@ -60,15 +59,15 @@ body::before {
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -2;
-  background-image: url("../images/pattern-background-desktop.svg");
+  background-image: url("images/pattern-background-desktop.svg");
 }
 ```
 
 ### Useful resources
 
 - [Flexbox Froggy](https://flexboxfroggy.com/) - A learning game. It helped me to understand how to use the **css flexbox** properties.
-- [Kevin-Pwell - Are you using the right CSS units?](https://www.youtube.com/watch?v=N5wpD9Ov_To) - This tutorial helped me to understand **css units**.
-- [Kevin-Pwell - CSS em and rem explained](https://www.youtube.com/watch?v=_-aDOAMmDHI&list=RDCMUCJZv4d5rbIKd4QHMPkcABCw&index=1) - This is a very good tutorial about css units **rem and em**. It helped me to create responsive views easier.
+- [Kevin-Powell - Are you using the right CSS units?](https://www.youtube.com/watch?v=N5wpD9Ov_To) - This tutorial helped me to understand **css units**.
+- [Kevin-Powell - CSS em and rem explained](https://www.youtube.com/watch?v=_-aDOAMmDHI&list=RDCMUCJZv4d5rbIKd4QHMPkcABCw&index=1) - This is a very good tutorial about css units **rem and em**. It helped me to create responsive views easier.
 
 
 ## Author
