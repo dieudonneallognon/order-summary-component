@@ -29,6 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 body::before {
@@ -45,12 +46,12 @@ body::before {
 }
 
 .card {
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     background: white;
-    width: 33%;
+    width: 31.5%;
     position: relative;
-    -webkit-box-shadow: 0 30px 35px 15px rgba(0, 128, 114, 176.1);
-    box-shadow: 0 30px 35px 15px rgba(114, 128, 176,0.1);
+    -webkit-box-shadow: 0 30px 45px 0 rgba(114, 128, 176, 0.25);
+    box-shadow: 0 30px 45px 0 rgba(114, 128, 176, 0.25);
 }
 
 .card-body {
@@ -68,8 +69,9 @@ body::before {
 
 .card-title {
     color: var(--dark-blue);
-    font-size: 2rem;
-    margin: 0.5em 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-align: center;
 }
 
 .card-text {
@@ -77,17 +79,17 @@ body::before {
     color: var(--desaturated-blue);
     font-weight: lighter;
     font-size: 1.2rem;
-    margin: 0.5em 0;
+    margin: 0;
 }
 
 .card-body #plan {
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
-    margin-top: 2.5em;
+    margin: 3em 0;
     background-color: var(--very-pale-blue);
-    padding: 2em 0;
     border-radius: 1rem;
+    padding: 1.5em 1.5em;
 }
 
 #plan-price {
@@ -102,10 +104,11 @@ body::before {
     margin-left: 1em;
 }
 
-#plan-price div h6 {
+#plan-price div h2 {
     margin: 0;
     font-size: 1.1rem;
     color: var(--dark-blue);
+    font-weight: 800;
 }
 
 #plan-price div p {
@@ -125,8 +128,8 @@ body::before {
     text-align: end;
     display: inline-block;
     color: var(--bright-blue);
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 0.9rem;
+    font-weight: 700;
     margin: auto;
 }
 
@@ -140,22 +143,24 @@ body::before {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 1em 0;
 }
 
 #actions button {
-    width: 100%;
-    height: 3em;
+    width: 110%;
+    height: 3.2em;
     display: block;
     border-radius: 0.7rem;
     color: white;
     background-color: var(--bright-blue);
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 700;
     border-width: 0;
-    margin: 2em 0;
+    margin-bottom: 2em;
     cursor: pointer;
     -webkit-box-shadow: 0 13px 25px 15px rgba(56, 41, 244, 0.15);
     box-shadow: 0 13px 25px 15px rgba(56, 41, 244, 0.15);
+    padding: 0 1em;
 }
 
 #actions a {
@@ -170,9 +175,10 @@ body::before {
 }
 
 .attribution {
-    position: absolute;
-    bottom: 10px;
+    position: relative;
     color: var(--desaturated-blue);
+    text-align: center;
+    margin: 2em;
 }
 
 @media (max-width: 1200px) {
@@ -207,7 +213,7 @@ body::before {
         font-size: 1rem;
     }
 
-    #plan-price div p, #plan-price div h6 {
+    #plan-price div p, #plan-price div h2 {
         font-size: 1rem;
     }
 
@@ -230,15 +236,27 @@ body::before {
         margin: 0 1.5em;
     }
 
+    .card-body {
+        padding: 1em 2.5em 2em;
+    }
+
     .card-title {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .card-text {
         font-size: 0.85rem;
     }
 
-    #plan-price div p, #plan-price div h6 {
+    #plan #plan-price {
+        width: 125%;
+    }
+
+    #plan div a {
+        font-size: 0.8rem;
+    }
+
+    #plan-price div p, #plan-price div h2 {
         font-size: 0.9rem;
     }
 
